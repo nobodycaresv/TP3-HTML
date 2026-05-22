@@ -1,81 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Configuracion basica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto/Registro</title>
+    <link rel=" stylesheet" href="estilo.css"/>
 </head>
-<body>
-    <h1>Pagina de Contacto / Registro</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="info.html">Info. general</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    <form method="POST" action="">
-        
-        <!-- Datos personales -->
-        <fieldset>
-            <legend>Tus Datos Personales</legend>
-            
-            <label for="nombre">Nombre completo:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <br><br>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
-            
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-            <br><br>
-        </fieldset>
-        <br>
+<body class="body">
+    <h1 class="h1">Página de Contacto / Registro</h1>
 
-        <!-- Generos -->
-        <fieldset>
-            <legend>Preferencia</legend>
-            
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="info.html">Info. general</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <form class="form" method="POST" action="">
+
+        <fieldset class="fieldset">
+            <legend class="legend">Tus Datos Personales</legend>
+
+            <label class="label"for="nombre">Nombre completo:</label>
+            <input class="input"type="text" id="nombre" name="nombre" required>
+
+            <label class="label"for="email">Email:</label>
+            <input class="input" type="email" id="email" name="email" required>
+
+            <label class="label" for="password">Contraseña:</label>
+            <input lass="input" type="password" id="password" name="password" required>
+        </fieldset>
+
+        <fieldset class="fieldset">
+            <legend class="legend">Preferencia</legend>
             <p>Género:</p>
-            <input type="radio" id="masculino" name="genero" value="masculino">
-            <label for="masculino">Masculino</label>
-            
-            <input type="radio" id="femenino" name="genero" value="femenino">
-            <label for="femenino">Femenino</label>
-            
-            <input type="radio" id="otro" name="genero" value="otro">
-            <label for="otro">Otro</label>
-            <br><br>
-        </fieldset>
-        <br>
+            <input  class="input"type="radio" id="masculino" name="genero" value="masculino">
+            <label class="label" for="masculino" style="display:inline;">Masculino</label>
 
-        <!-- Boton eres un robot -->
-        <fieldset>
-            <legend> Eres un Robot?</legend>
-            <button type="submit" > CAPAZ </button>
-            <button type="reset" >NO SOY UN ROBOT </button>
-        </fieldset>
-        <br><br>
+            <input class="input" type="radio" id="femenino" name="genero" value="femenino">
+            <label class="label" for="femenino" style="display:inline;">Femenino</label>
 
-        <!-- Un Mensaje -->
-        <fieldset>
-            <legend>Dejanos un Mensaje</legend>
-            
-            <label for="mensaje">Escriba tu consulta:</label>
-            <br>
-            <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+            <input class="input" type="radio" id="otro" name="genero" value="otro">
+            <label class="label" for="otro" style="display:inline;">Otro</label>
         </fieldset>
-        <br>
 
-        <!-- Botones -->
-        <button type="submit">Enviar</button>
-        <button type="reset">Cancelar</button>
-        
+        <fieldset class="fieldset">
+            <legend class="legend">¿Eres un Robot?</legend>
+            <button class="button" type="submit">CAPAZ</button>
+            <button class="button" type="reset">NO SOY UN ROBOT</button>
+        </fieldset>
+
+        <fieldset class="fieldset">
+            <legend class="legend">Dejanos un Mensaje</legend>
+            <label class="label" for="mensaje">Escribí tu consulta:</label>
+            <textarea class="textarea" id="mensaje" name="mensaje" rows="5" required></textarea>
+        </fieldset>
+
+        <button class="button"type="submit">Enviar</button>
+        <button class="button" type="reset">Cancelar</button>
+
     </form>
-    <footer>
-        <p> Cualquiera con tiempo y cuidado puede armar su propia computadora </p>
-        <p>Pagina creada por Vazquez Santiago, Perez Ortega Mariano y Tamer Francisco</p>
+
+    <footer class="footer">
+        <p>Cualquiera con tiempo y cuidado puede armar su propia computadora</p>
+        <p>Página creada por Vazquez Santiago, Perez Ortega Mariano y Tamer Francisco</p>
         <p>&copy; 2026 "Como armar tu propia PC". Todos los derechos reservados.</p>
     </footer>
 </body>
