@@ -2,12 +2,16 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Informacion relevante</title>
+        <link rel="stylesheet" href="estilos.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body class="fondo">
         <header>
-            <h1>Como armamos una PC?</h1>
-            <nav>
+            <h1 class="titulo">Como armamos una PC?</h1>
+            <nav class="nav">
                 <a href="index.html">Inicio</a>
                 <a href="info.html">Info. general</a>
                 <a href="contacto.html">Contacto</a>
@@ -15,58 +19,58 @@
         </header>
     <main>
         <section>
-                <table>
-                    <thead>
-                        <tr>
-                            <h2>Que componentes necesitamos para armar una PC?</h2>
-                            <th>Componente</th>
-                            <th>Precio</th>
-                            <th>Recomendado</th>    
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>CPU</td>
-                            <td>200.000 Pesos</td>
-                            <td>Ryzen 5 5600</td>
-                        </tr>
-                        <tr>
-                            <td>GPU</td>
-                            <td>400.000 Pesos</td>
-                            <td>RTX 3070ti</td>
-                        </tr>
-                        <tr>
-                            <td>Motherboard</td>
-                            <td>150.000 Pesos</td>
-                            <td>B550m Wi-fi</td>
-                        </tr>
-                        <tr>
-                            <td>Memoria RAM</td>
-                            <td>200.000 Pesos</td>
-                            <td>2x8 3200mhz</td>
-                        </tr>
-                        <tr>
-                            <td>Disco SSD M.2</td>
-                            <td>100.000 Pesos</td>
-                            <td>Kingston NV3</td>
-                        </tr>
-                        <tr>
-                            <td>Fuente de alimentacion</td>
-                            <td>180.000 Pesos</td>
-                            <td>Corsair RM750x</td>
-                        </tr>
-                        <tr>
-                            <td>Gabinete</td>
-                            <td>80.000 Pesos</td>
-                            <td>CM Elite 481 wood</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="4">Presupuesto estimado: 1.410.000 pesos</td>
-                        </tr>
-                    </tfoot>
-                </table>
+            <table class="table table-light table-striped-columns">
+                <thead>
+                    <tr>
+                        <h2>Que componentes necesitamos para armar una PC?</h2>
+                        <th>Componente</th>
+                        <th>Precio</th>
+                        <th>Recomendado</th>    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CPU</td>
+                        <td>200.000 Pesos</td>
+                        <td>Ryzen 5 5600</td>
+                    </tr>
+                    <tr>
+                        <td>GPU</td>
+                        <td>400.000 Pesos</td>
+                        <td>RTX 3070ti</td>
+                    </tr>
+                    <tr>
+                        <td>Motherboard</td>
+                        <td>150.000 Pesos</td>
+                        <td>B550m Wi-fi</td>
+                    </tr>
+                    <tr>
+                        <td>Memoria RAM</td>
+                        <td>200.000 Pesos</td>
+                        <td>2x8 3200mhz</td>
+                    </tr>
+                    <tr>
+                        <td>Disco SSD M.2</td>
+                        <td>100.000 Pesos</td>
+                        <td>Kingston NV3</td>
+                    </tr>
+                    <tr>
+                        <td>Fuente de alimentacion</td>
+                        <td>180.000 Pesos</td>
+                        <td>Corsair RM750x</td>
+                    </tr>
+                    <tr>
+                        <td>Gabinete</td>
+                        <td>80.000 Pesos</td>
+                        <td>CM Elite 481 wood</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Presupuesto estimado: 1.410.000 pesos</td>
+                    </tr>
+                </tfoot>
+            </table>
         </section>
 
         <section>
@@ -81,22 +85,22 @@
             <dl>
                 <dt><strong>CPU</strong></dt>
                 <dd>Es el "cerebro" de la computadora, encargado de interpretar y ejecutar instrucciones, procesar datos y coordinar los demás componentes de hardware y software.</dd>
-                <img src="https://mexx-img-2019.s3.amazonaws.com/procesador-cpu-ryzen_40369_1.jpeg?v252?v348?v928" >
+                <img class="tamimg" src="./imagenes/cpu.jpeg" >
                 <dt><strong>GPU</strong></dt>
                 <dd>Es un circuito electrónico especializado en acelerar la renderización de imágenes, video y animaciones 3D, procesando grandes volúmenes de datos simultáneamente.</dd>
-                <img src="https://www.aorus.com/event/graphics-cards/rtx30/assets/images/products/AORUS-GeForce-RTX-3070-MASTER-8G.png">
+                <img class="tamimg" src="./imagenes/gpu.png">
                 <dt><strong>RAM</strong></dt>
                 <dd>Sirve para almacenar temporalmente los datos y programas que la computadora o dispositivo está usando en tiempo real, permitiendo que la CPU acceda a ellos a una velocidad muy alta.</dd>
-                <img src="https://www.compu-santafe.com.ar/productos/get-imagen/7438">
+                <img class="tamimg" src="./imagenes/RAM.jpg">
                 <dt><strong>Motherboard</strong></dt>
                 <dd>Se trata de la placa de circuito impreso principal de una computadora, lo que significa que es la pieza principal de los circuitos a la que se conectan las demás piezas que crean el conjunto.</dd>
-                <img src="https://dinobyte.ar/wp-content/uploads/Motherboard-AM4-Asus-Rog-Strix-B550-F-II-Gaming-Wifi-D4.jpg">
+                <img class="tamimg"  src="./imagenes/mrb.jpg">
             </dl>
         </section>
 
         <section>
             <h4>Pasos a seguir para armar una computadora</h4>
-            <ol>
+            <ol class="lista">
                 <li>Preparar el espacio de trabajo</li>
                 <li>Colocar la motherboard en una superficie plastica o en su misma caja</li> 
                 <li>Instalar el procesador en la motherboard
@@ -128,10 +132,12 @@
             </ol>
         </section>
     </main>
-        <footer>
-            <p> Cualquiera con tiempo y cuidado puede armar su pripia computadora </p>
-            <p>Pagina creada por Vazquez Santiago, Perez Ortega Mariano y Tamer Francisco</p>
-            <p>&copy; 2026 "Como armar tu propia PC". Todos los derechos reservados.</p>
-        </footer>
+    <footer class="footer">
+        <div class="grid">
+            <p class="textofooter" class="copyr">Pagina creada por Vazquez Santiago, Perez Ortega Mariano y Tamer Francisco</p>
+            <img class="footimg" class="logo" src="./imagenes/cannycat.png" alt="gato">
+            <p class="textofooter" class="mensaje">Cualquiera con tiempo y cuidado puede armar su propia computadora <br> Todos los derechos reservados. <br> &copy; 2026 "Como armar tu propia PC".</p>
+        </div>
+    </footer>
     </body>
 </html>
