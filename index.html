@@ -5,105 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armado de Computadoras</title>
-
+    <link rel="stylesheet" href="ESTILO.CSS">
 </head>
 <body>
+
     <!-- Encabezado del sitio -->
-    <header>
-        <h1>Armado de Computadoras</h1>
-        <p><em>Tu guia para construir tu propia pc desde cero</em></p>
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">Armado de Computadoras</h1>
+        <p class="encabezado__subtitulo">Tu guia para construir tu propia pc desde cero</p>
     </header>
 
     <!-- Menu de navegacion -->
-    <!-- Contiene los enlaces para moverse entre las paginas del sitio -->
-    <nav>
+    <nav class="nav">
         <strong>Navegación:</strong>
-        <a href="index.html">Inicio</a>
-        <a href="info.html">Componentes y Datos</a>
-        <a href="contacto.html">Contacto</a>
+        <a class="nav__enlace" href="index.html">Inicio</a>
+        <a class="nav__enlace" href="info.html">Componentes y Datos</a>
+        <a class="nav__enlace" href="contacto.html">Contacto</a>
     </nav>
 
-    <!-- Linea separadora -->
     <hr />
 
     <!-- Contenido principal -->
-    <main>
+    <main class="principal">
 
-        <!-- Enlace interno (ancla): lleva al usuario a la seccion "pasos" mas abajo -->
-        <p><a href="#pasos">Ver los primeros pasos para armar tu PC</a></p>
+        <!-- Enlace ancla hacia la seccion de pasos -->
+        <p><a class="enlace" href="#pasos">Ver los primeros pasos para armar tu PC</a></p>
 
         <!-- Seccion de bienvenida -->
-    <section id="bienvenida">
-        <h2>¿Que es el armado de computadoras?</h2>
-        <p>
-            Armar una computadora es el proceso de <strong>seleccionar, comprar y ensamblar
-            los componentes de hardware</strong> para construir una PC a medida. A diferencia
-            de comprar una computadora ya armada, hacerlo vos mismo te permite elegir cada
-            pieza segun tus necesidades y presupuesto.
-        </p>
-        <p>
-            Este sitio está pensado para principiantes que quieren aprender
-            como funciona una computadora por dentro, que partes la componen y como
-            ensamblarlas correctamente. No necesitas experiencia previa: vamos paso a paso.
-        </p>
-        <img src="https://www.cncnet.com.ar/wp-content/uploads/2022/02/PC-NSX-2060-1.png"
-        alt="Computadora pre armada"
-        />
-        <br />
+        <section id="bienvenida" class="seccion seccion--oscura">
+            <h2 class="seccion__titulo">¿Que es el armado de computadoras?</h2>
+            <p>
+                Armar una computadora es el proceso de <strong>seleccionar, comprar y ensamblar
+                los componentes de hardware</strong> para construir una PC a medida. A diferencia
+                de comprar una computadora ya armada, hacerlo vos mismo te permite elegir cada
+                pieza segun tus necesidades y presupuesto.
+            </p>
+            <p>
+                Este sitio está pensado para principiantes que quieren aprender
+                como funciona una computadora por dentro, que partes la componen y como
+                ensamblarlas correctamente. No necesitas experiencia previa: vamos paso a paso.
+            </p>
+            <img
+                class="seccion__imagen"
+                src="https://www.cncnet.com.ar/wp-content/uploads/2022/02/PC-NSX-2060-1.png"
+                alt="Computadora pre armada"
+            />
+        </section>
 
-    </section>
-    <!-- Seccion de ventajas -->
-    <section>
-        <h2>¿Por qué armar tu propia PC?</h2>
-        <h3>Ventajas principales</h3>
+        <!-- Seccion de ventajas -->
+        <section class="seccion">
+            <h2 class="seccion__titulo">¿Por qué armar tu propia PC?</h2>
+            <h3 class="seccion__subtitulo">Ventajas principales</h3>
+            <ul class="lista">
+                <li class="lista__item"><strong>Ahorro de dinero:</strong> pagas solo por las piezas, no por el ensamblado.</li>
+                <li class="lista__item"><strong>Personalizacion total:</strong> elegis cada componente segun lo que necesitas.</li>
+                <li class="lista__item"><strong>Aprendizaje:</strong> entendes como funciona la computadora por dentro.</li>
+                <li class="lista__item"><strong>Actualizaciones faciles:</strong> sabes exactamente que cambiar cuando queres mejorar.</li>
+            </ul>
+        </section>
 
-        <!-- Lista no ordenada de ventajas -->
-        <ul>
-        <li><strong>Ahorro de dinero:</strong> pagas solo por las piezas, no por el ensamblado.</li>
-        <li><strong>Personalizacion total:</strong> elegis cada componente segun lo que necesitas.</li>
-        <li><strong>Aprendizaje:</strong> entendes como funciona la computadora por dentro.</li>
-        <li><strong>Actualizaciones faciles:</strong> sabes exactamente que cambiar cuando queres mejorar.</li>
-        </ul>
-    </section>
+        <!-- Seccion de primeros pasos (destino del enlace ancla) -->
+        <section id="pasos" class="seccion">
+            <h2 class="seccion__titulo">Primeros pasos para armar tu PC</h2>
+            <h3 class="seccion__subtitulo">¿Por donde empezar?</h3>
+            <p>
+                Antes de comprar cualquier cosa, es importante <strong>planificar</strong>.
+                Podes responder a estas preguntas para ayudarte: ¿Para que vas a usar la PC? ¿Cuanto dinero tenes para gastar?
+            </p>
+            <p>
+                Una vez que ya tenes claro el objetivo, podes pasar a la etapa de seleccionar componentes.
+                Te recomendamos visitar sitios especializados para comparar precios.
+            </p>
+            <p>Podes comparar precios de componentes en:
+                <a
+                    class="enlace enlace--externo"
+                    href="https://www.hardgamers.com.ar/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >hardgamers (abre en nueva pestaña)</a>
+            </p>
+        </section>
 
-    <!-- Seccion de primeros pasos -->
-    <!-- El id="pasos" es el destino del enlace ancla de arriba -->
-    <section id="pasos">
-        <h2>Primeros pasos para armar tu PC</h2>
-        <h3>¿Por donde empezar?</h3>
-        <p>
-            Antes de comprar cualquier cosa, es importante <strong>planificar</strong>.
-            Podes responder a estas preguntas para ayudarte: ¿Para que vas a usar la PC? ¿Cuanto dinero tenes para gastar?
-        </p>
+        <!-- Seccion del mapa -->
+        <section class="seccion">
+            <h2 class="seccion__titulo">Ubicacion de tiendas de componentes</h2>
+            <p>Encontra tiendas de hardware cerca tuyo:</p>
+            <iframe
+                class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28976.75200722106!2d-65.43446207720515!3d-24.792234532784097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc2cbc0c915bd%3A0x83f84f24ad6c0b11!2sSALTACOM!5e0!3m2!1ses-419!2sar!4v1776993029665!5m2!1ses-419!2sar"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa de tiendas de hardware"
+            ></iframe>
+        </section>
 
-        <p>
-            Una vez que ya tenes claro el objetivo, podes pasar a la etapa de seleccionar componentes.
-            Te recomendamos visitar sitios especializados para comparar precios.
-        </p>
-
-        <p>Podes comparar precios de componentes en:
-        <a
-            href="https://www.hardgamers.com.ar/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >hardgamers (abre en nueva pestaña)</a>
-        </p>
-    </section>
-
-    <!-- Seccion del mapa (iframe) -->
-    <section>
-        <h2>Ubicacion de tiendas de componentes</h2>
-        <p>Encontra tiendas de hardware cerca tuyo:</p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28976.75200722106!2d-65.43446207720515!3d-24.792234532784097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc2cbc0c915bd%3A0x83f84f24ad6c0b11!2sSALTACOM!5e0!3m2!1ses-419!2sar!4v1776993029665!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            title="Mapa de tiendas de hardware"
-        ></iframe>
-    </section>
     </main>
-        <footer>
-            <p> Cualquiera con tiempo y cuidado puede armar su propia computadora </p>
-            <p>Pagina creada por Vazquez Santiago, Perez Ortega Mariano y Tamer Francisco</p>
-            <p>&copy; 2026 "Como armar tu propia PC". Todos los derechos reservados.</p>
-        </footer>
+
+    <!-- Pie de pagina -->
+    <footer class="pie">
+        <p>Cualquiera con tiempo y cuidado puede armar su propia computadora</p>
+        <p>Pagina creada por Vazquez Santiago, Perez Ortega Mariano y Tamer Francisco</p>
+        <p>&copy; 2026 "Como armar tu propia PC". Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
